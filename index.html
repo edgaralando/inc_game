@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+    <title>My Game</title>
+  </head>
+  <body bgcolor=white onload="load()">
+    <h1>Clicks: <a id="clicks">0</a><br>
+      Rate: <a id="rate">0</a> /s
+    </h1>
+    <button id="click" type="button" onClick="count(1);speed()">Press</button>
+    <button id="click" type="button" onClick="buyBuilding();speed()">Buy Building</button><br><br>
+
+    Buildings: <span id="buildings">0</span><br>
+    Cost: <span id="buildingCost">10</span><br><br>
+
+    <button id="save" type="button" onClick="save()">save</button><br>
+    <button id="save" type="button" onClick="load()">load</button><br>
+    <button id="save" type="button" onClick="localStorage.removeItem("save")">delete save</button>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
